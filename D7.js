@@ -228,3 +228,7 @@ console.log(choosenMovie)
 /* ESERCIZIO 15 (findIndex)
   Scrivi una funzione per ottenere dall'array fornito l'indice del primo film uscito nell'anno fornito come parametro.
 */
+
+const choosenYear = movies.findIndex(elements => parseInt(elements.Year) === 2018)
+
+console.log(movies[choosenYear])
