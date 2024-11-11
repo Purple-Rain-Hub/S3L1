@@ -190,6 +190,8 @@ const movies = [
   Scrivi una funzione per trovare il film più vecchio nell'array fornito.
 */
 
+//non sono riuscito farlo in tempo prima che lo spiegasse causa banca :( //
+
 /* ESERCIZIO 10
   Scrivi una funzione per ottenere il numero di film contenuti nell'array fornito.
 */
@@ -206,7 +208,7 @@ console.log(moviesTitle);
   Scrivi una funzione per ottenere dall'array fornito solamente i film usciti nel millennio corrente.
 */
 
-const newFilm = movies.filter(elements => parseInt(elements.Year) >= 2000)
+const newFilm = movies.filter(elements => parseInt(elements.Year) > 2000)
 console.log(newFilm)
 
 /* ESERCIZIO 13 (reduce)
@@ -220,7 +222,8 @@ console.log(movieSum);
   Scrivi una funzione per ottenere dall'array fornito uno specifico film (la funzione riceve un imdbID come parametro).
 */
 
-
+const choosenMovie = movies.find(elements => elements.imdbID === 'tt2395427')
+console.log(choosenMovie)
 
 /* ESERCIZIO 15 (findIndex)
   Scrivi una funzione per ottenere dall'array fornito l'indice del primo film uscito nell'anno fornito come parametro.
